@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		730FC13626DA230400954961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730FC13526DA230400954961 /* AppDelegate.swift */; };
+		730FC13826DA230400954961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730FC13726DA230400954961 /* SceneDelegate.swift */; };
+		730FC13A26DA230400954961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730FC13926DA230400954961 /* ViewController.swift */; };
+		730FC13D26DA230400954961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730FC13B26DA230400954961 /* Main.storyboard */; };
+		730FC13F26DA230600954961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 730FC13E26DA230600954961 /* Assets.xcassets */; };
+		730FC14226DA230600954961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730FC14026DA230600954961 /* LaunchScreen.storyboard */; };
+		730FC14D26DA230600954961 /* rakutenTableTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730FC14C26DA230600954961 /* rakutenTableTestTests.swift */; };
+		730FC15826DA230600954961 /* rakutenTableTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730FC15726DA230600954961 /* rakutenTableTestUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		730FC14926DA230600954961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 730FC12A26DA230400954961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 730FC13126DA230400954961;
+			remoteInfo = rakutenTableTest;
+		};
+		730FC15426DA230600954961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 730FC12A26DA230400954961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 730FC13126DA230400954961;
+			remoteInfo = rakutenTableTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		730FC13226DA230400954961 /* rakutenTableTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rakutenTableTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		730FC13526DA230400954961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		730FC13726DA230400954961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		730FC13926DA230400954961 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		730FC13C26DA230400954961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		730FC13E26DA230600954961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		730FC14126DA230600954961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		730FC14326DA230600954961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		730FC14826DA230600954961 /* rakutenTableTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rakutenTableTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		730FC14C26DA230600954961 /* rakutenTableTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rakutenTableTestTests.swift; sourceTree = "<group>"; };
+		730FC14E26DA230600954961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		730FC15326DA230600954961 /* rakutenTableTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rakutenTableTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		730FC15726DA230600954961 /* rakutenTableTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rakutenTableTestUITests.swift; sourceTree = "<group>"; };
+		730FC15926DA230600954961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		730FC12F26DA230400954961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730FC14526DA230600954961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730FC15026DA230600954961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		730FC12926DA230400954961 = {
+			isa = PBXGroup;
+			children = (
+				730FC13426DA230400954961 /* rakutenTableTest */,
+				730FC14B26DA230600954961 /* rakutenTableTestTests */,
+				730FC15626DA230600954961 /* rakutenTableTestUITests */,
+				730FC13326DA230400954961 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		730FC13326DA230400954961 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				730FC13226DA230400954961 /* rakutenTableTest.app */,
+				730FC14826DA230600954961 /* rakutenTableTestTests.xctest */,
+				730FC15326DA230600954961 /* rakutenTableTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		730FC13426DA230400954961 /* rakutenTableTest */ = {
+			isa = PBXGroup;
+			children = (
+				730FC13526DA230400954961 /* AppDelegate.swift */,
+				730FC13726DA230400954961 /* SceneDelegate.swift */,
+				730FC13926DA230400954961 /* ViewController.swift */,
+				730FC13B26DA230400954961 /* Main.storyboard */,
+				730FC13E26DA230600954961 /* Assets.xcassets */,
+				730FC14026DA230600954961 /* LaunchScreen.storyboard */,
+				730FC14326DA230600954961 /* Info.plist */,
+			);
+			path = rakutenTableTest;
+			sourceTree = "<group>";
+		};
+		730FC14B26DA230600954961 /* rakutenTableTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				730FC14C26DA230600954961 /* rakutenTableTestTests.swift */,
+				730FC14E26DA230600954961 /* Info.plist */,
+			);
+			path = rakutenTableTestTests;
+			sourceTree = "<group>";
+		};
+		730FC15626DA230600954961 /* rakutenTableTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				730FC15726DA230600954961 /* rakutenTableTestUITests.swift */,
+				730FC15926DA230600954961 /* Info.plist */,
+			);
+			path = rakutenTableTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		730FC13126DA230400954961 /* rakutenTableTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 730FC15C26DA230600954961 /* Build configuration list for PBXNativeTarget "rakutenTableTest" */;
+			buildPhases = (
+				730FC12E26DA230400954961 /* Sources */,
+				730FC12F26DA230400954961 /* Frameworks */,
+				730FC13026DA230400954961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rakutenTableTest;
+			productName = rakutenTableTest;
+			productReference = 730FC13226DA230400954961 /* rakutenTableTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		730FC14726DA230600954961 /* rakutenTableTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 730FC15F26DA230600954961 /* Build configuration list for PBXNativeTarget "rakutenTableTestTests" */;
+			buildPhases = (
+				730FC14426DA230600954961 /* Sources */,
+				730FC14526DA230600954961 /* Frameworks */,
+				730FC14626DA230600954961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				730FC14A26DA230600954961 /* PBXTargetDependency */,
+			);
+			name = rakutenTableTestTests;
+			productName = rakutenTableTestTests;
+			productReference = 730FC14826DA230600954961 /* rakutenTableTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		730FC15226DA230600954961 /* rakutenTableTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 730FC16226DA230600954961 /* Build configuration list for PBXNativeTarget "rakutenTableTestUITests" */;
+			buildPhases = (
+				730FC14F26DA230600954961 /* Sources */,
+				730FC15026DA230600954961 /* Frameworks */,
+				730FC15126DA230600954961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				730FC15526DA230600954961 /* PBXTargetDependency */,
+			);
+			name = rakutenTableTestUITests;
+			productName = rakutenTableTestUITests;
+			productReference = 730FC15326DA230600954961 /* rakutenTableTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		730FC12A26DA230400954961 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					730FC13126DA230400954961 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					730FC14726DA230600954961 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 730FC13126DA230400954961;
+					};
+					730FC15226DA230600954961 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 730FC13126DA230400954961;
+					};
+				};
+			};
+			buildConfigurationList = 730FC12D26DA230400954961 /* Build configuration list for PBXProject "rakutenTableTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 730FC12926DA230400954961;
+			productRefGroup = 730FC13326DA230400954961 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				730FC13126DA230400954961 /* rakutenTableTest */,
+				730FC14726DA230600954961 /* rakutenTableTestTests */,
+				730FC15226DA230600954961 /* rakutenTableTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		730FC13026DA230400954961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730FC14226DA230600954961 /* LaunchScreen.storyboard in Resources */,
+				730FC13F26DA230600954961 /* Assets.xcassets in Resources */,
+				730FC13D26DA230400954961 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730FC14626DA230600954961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730FC15126DA230600954961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		730FC12E26DA230400954961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730FC13A26DA230400954961 /* ViewController.swift in Sources */,
+				730FC13626DA230400954961 /* AppDelegate.swift in Sources */,
+				730FC13826DA230400954961 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730FC14426DA230600954961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730FC14D26DA230600954961 /* rakutenTableTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730FC14F26DA230600954961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730FC15826DA230600954961 /* rakutenTableTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		730FC14A26DA230600954961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 730FC13126DA230400954961 /* rakutenTableTest */;
+			targetProxy = 730FC14926DA230600954961 /* PBXContainerItemProxy */;
+		};
+		730FC15526DA230600954961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 730FC13126DA230400954961 /* rakutenTableTest */;
+			targetProxy = 730FC15426DA230600954961 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		730FC13B26DA230400954961 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				730FC13C26DA230400954961 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		730FC14026DA230600954961 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				730FC14126DA230600954961 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		730FC15A26DA230600954961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		730FC15B26DA230600954961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		730FC15D26DA230600954961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VNAV5S2KU6;
+				INFOPLIST_FILE = rakutenTableTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kazuyasasakura.rakutenTableTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		730FC15E26DA230600954961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VNAV5S2KU6;
+				INFOPLIST_FILE = rakutenTableTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kazuyasasakura.rakutenTableTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		730FC16026DA230600954961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VNAV5S2KU6;
+				INFOPLIST_FILE = rakutenTableTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kazuyasasakura.rakutenTableTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rakutenTableTest.app/rakutenTableTest";
+			};
+			name = Debug;
+		};
+		730FC16126DA230600954961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VNAV5S2KU6;
+				INFOPLIST_FILE = rakutenTableTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kazuyasasakura.rakutenTableTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rakutenTableTest.app/rakutenTableTest";
+			};
+			name = Release;
+		};
+		730FC16326DA230600954961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VNAV5S2KU6;
+				INFOPLIST_FILE = rakutenTableTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kazuyasasakura.rakutenTableTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rakutenTableTest;
+			};
+			name = Debug;
+		};
+		730FC16426DA230600954961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VNAV5S2KU6;
+				INFOPLIST_FILE = rakutenTableTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kazuyasasakura.rakutenTableTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rakutenTableTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		730FC12D26DA230400954961 /* Build configuration list for PBXProject "rakutenTableTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730FC15A26DA230600954961 /* Debug */,
+				730FC15B26DA230600954961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		730FC15C26DA230600954961 /* Build configuration list for PBXNativeTarget "rakutenTableTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730FC15D26DA230600954961 /* Debug */,
+				730FC15E26DA230600954961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		730FC15F26DA230600954961 /* Build configuration list for PBXNativeTarget "rakutenTableTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730FC16026DA230600954961 /* Debug */,
+				730FC16126DA230600954961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		730FC16226DA230600954961 /* Build configuration list for PBXNativeTarget "rakutenTableTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730FC16326DA230600954961 /* Debug */,
+				730FC16426DA230600954961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 730FC12A26DA230400954961 /* Project object */;
+}
