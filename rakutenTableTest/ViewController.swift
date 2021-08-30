@@ -8,8 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    
-    
   
 
     var recips = [SerchBookKList]()
@@ -35,7 +33,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
 
     private func getRApi(){
-           guard let url = URL(string: "https://app.rakuten.co.jp/services/api/BooksDVD/Search/20170404?format=json&title=%E3%83%9D%E3%83%83%E3%82%BF%E3%83%BC&booksGenreId=003&applicationId=1024730205059605378") else {return}
+           guard let url = URL(string: "https://app.rakuten.co.jp/services/api/BooksDVD/Search/20170404?format=json&artistName=%E5%8C%97%E9%87%8E%E6%AD%A6&booksGenreId=003&applicationId=1024730205059605378") else {return}
 
            let task = URLSession.shared.dataTask(with: url) { (data, response, err)in
                if let err = err {
@@ -62,42 +60,37 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
        }
    
     
-   
+  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
-    
-    
-                  
-        return recips.count
-        
-    }
-    
-    
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        
-//        let cake = recips[indexPath.row].tit
 
-//        cell.textLabel?.text = cake
         
-//        cell.textLabel?.text = recips[indexPath.row].Items.
+        if (recips.count == 0) {
+                          return recips.count
+                      } else {
+                        return recips[0].Items?.count ?? 0
+            }
         
     
-//        var cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-//
-//        cell = self.recips[0].Items[indexPath.row]
-////        let cake = recips[indexPath.row].Items?[0].Item?.title
-//
-//        cell.textLabel?.text = cake
-        
-        return cell
-        
     }
-//
+
+
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+
+        cell.textLabel?.text = recips[0].Items?[indexPath.row].Item?.title
+
+        return cell
+
+    }
+
     
-            
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(recips[0].Items?[indexPath.row].Item ?? 0)
+        
+        
+        }
 
 }
 

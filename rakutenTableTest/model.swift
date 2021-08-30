@@ -17,7 +17,7 @@ struct SerchBookKList: Codable {
 
 struct ItemDic : Codable{
     var Item : ItemInfo?
-
+//    var count: Int
 
 
 struct ItemInfo: Codable {
@@ -27,4 +27,8 @@ struct ItemInfo: Codable {
 
 }
 
-}}
+}
+    
+    
+    
+}
