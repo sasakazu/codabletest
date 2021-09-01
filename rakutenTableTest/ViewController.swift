@@ -60,28 +60,40 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
        }
    
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           return 80
+       }
+    
   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        
         if (recips.count == 0) {
                           return recips.count
                       } else {
                         return recips[0].Items?.count ?? 0
             }
-        
-    
     }
 
 
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! TableViewCell
+        
+            cell.recip = recips[0].Items?[indexPath.row].Item
 
-        cell.textLabel?.text = recips[0].Items?[indexPath.row].Item?.title
-
-        return cell
+            return cell
+        
+        
+        
+        
+//        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+//
+//        cell.textLabel?.text = recips[0].Items?[indexPath.row].Item?.title
+//
+//        return cell
 
     }
 
