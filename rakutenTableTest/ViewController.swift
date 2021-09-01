@@ -26,7 +26,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableviewTest.delegate = self
         tableviewTest.dataSource = self
         
-        tableviewTest.register(TableViewCell.self, forCellReuseIdentifier: cellId)
+//        tableviewTest.register(TableViewCell.self, forCellReuseIdentifier: cellId)
+        
+        tableviewTest.register(UINib(nibName: "testTableViewCell", bundle: nil), forCellReuseIdentifier: cellId)
         
         getRApi()
 
@@ -80,20 +82,20 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
         
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! testTableViewCell
         
-            cell.recip = recips[0].Items?[indexPath.row].Item
+//            cell.recip = recips[0].Items?[indexPath.row].Item
 
-            return cell
+//            return cell
         
         
         
         
 //        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
 //
-//        cell.textLabel?.text = recips[0].Items?[indexPath.row].Item?.title
-//
-//        return cell
+        cell.recip = recips[0].Items?[indexPath.row].Item
+
+        return cell
 
     }
 

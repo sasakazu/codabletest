@@ -1,14 +1,20 @@
 //
-//  TableViewCell.swift
+//  testTableViewCell.swift
 //  rakutenTableTest
 //
-//  Created by 笹倉一也 on 2021/08/28.
+//  Created by 笹倉一也 on 2021/09/01.
 //
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class testTableViewCell: UITableViewCell {
 
+    
+    
+    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var testImage: UIImageView!
+    @IBOutlet weak var directed: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,8 +25,9 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
-}
+    
+    
+    
 //    let bodyTextLabel: UILabel = {
 //          let label = UILabel()
 //          label.text = "something in here"
@@ -28,7 +35,7 @@ class TableViewCell: UITableViewCell {
 //          label.translatesAutoresizingMaskIntoConstraints = false
 //          return label
 //      }()
-//
+    
 //    let userImageView: UIImageView = {
 //          let iv = UIImageView()
 //           iv.contentMode = .scaleAspectFill
@@ -36,28 +43,29 @@ class TableViewCell: UITableViewCell {
 //           iv.clipsToBounds = true
 //           return iv
 //       }()
-//
-//    var recip: SerchBookKList.ItemDic.ItemInfo? {
-//            didSet {
-//                bodyTextLabel.text = recip?.title
-//                let url = URL(string: recip?.smallImageUrl ?? "")
-//                do {
-//                    let data = try Data(contentsOf: url!)
-//                    let image = UIImage(data: data)
-//                    userImageView.image = image
-//                }catch let err {
-//                    print("Error : \(err.localizedDescription)")
-//                }
-//            }
-//        }
-//
-//
+    
+    var recip: SerchBookKList.ItemDic.ItemInfo? {
+            didSet {
+                testLabel.text = recip?.title
+                directed.text = recip?.artistName
+                let url = URL(string: recip?.smallImageUrl ?? "")
+                do {
+                    let data = try Data(contentsOf: url!)
+                    let image = UIImage(data: data)
+                    testImage.image = image
+                }catch let err {
+                    print("Error : \(err.localizedDescription)")
+                }
+            }
+        }
+    
+ 
 //
 //    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 //           super.init(style: style, reuseIdentifier: reuseIdentifier)
 //
-//           addSubview(userImageView)
-//           addSubview(bodyTextLabel)
+////           addSubview(userImageView)
+////           addSubview(bodyTextLabel)
 //           [
 //               userImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
 //               userImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
@@ -76,7 +84,8 @@ class TableViewCell: UITableViewCell {
 //           fatalError("init(coder:) has not been implemented")
 //       }
 //
-//
-//   }
+    
+   }
+    
     
 

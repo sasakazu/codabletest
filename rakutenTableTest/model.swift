@@ -10,24 +10,21 @@ import Foundation
 
 struct SerchBookKList: Codable {
     
-    var count: Int
-    var Items: [ItemDic]?
+        var count: Int
+        var Items: [ItemDic]?
 
-
-
-struct ItemDic : Codable{
+        struct ItemDic : Codable{
     
-    var Item : ItemInfo?
+        var Item : ItemInfo?
 
-struct ItemInfo: Codable {
-    var title :String
-    var smallImageUrl :String
-    var salesDate :String
+        struct ItemInfo: Codable {
+        var title :String
+        var smallImageUrl :String
+        var salesDate :String
+        var artistName: String
+    
+        }
 
-}
+    }
 
-}
-    
-    
-    
 }
