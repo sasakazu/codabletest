@@ -7,35 +7,68 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource, UITextFieldDelegate {
   
 
     var recips = [SerchBookKList]()
+
+//    テキストフィールドに入れたワードを入れる箱
+    var words:String = ""
+        
     
     private let cellId = "cellId"
     
     
     @IBOutlet weak var tableviewTest: UITableView!
+    @IBOutlet weak var textField: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-    
+ 
+        
         tableviewTest.delegate = self
         tableviewTest.dataSource = self
+        textField.delegate = self
         
 //        tableviewTest.register(TableViewCell.self, forCellReuseIdentifier: cellId)
         
         tableviewTest.register(UINib(nibName: "testTableViewCell", bundle: nil), forCellReuseIdentifier: cellId)
         
-        getRApi()
+//        getRApi()
 
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+
+            // キーボードを隠す
+
+            textField.resignFirstResponder()
+            
+            let itemString = textField.text
+            
+            self.words = itemString?.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""
+
+            
+            getRApi()
+            
+            print(self.words)
+
+
+            return true
+        }
+
+
+    
+    
     private func getRApi(){
-           guard let url = URL(string: "https://app.rakuten.co.jp/services/api/BooksDVD/Search/20170404?format=json&artistName=%E5%8C%97%E9%87%8E%E6%AD%A6&booksGenreId=003&applicationId=1024730205059605378") else {return}
+
+        
+        guard let url = URL(string:"https://app.rakuten.co.jp/services/api/BooksDVD/Search/20170404?format=json&artistName=\(words)&booksGenreId=003&applicationId=1024730205059605378")
+
+           else {return}
 
            let task = URLSession.shared.dataTask(with: url) { (data, response, err)in
                if let err = err {
@@ -46,12 +79,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                    do{
                        let resultList = try JSONDecoder().decode(SerchBookKList.self, from: data)
                        self.recips = [resultList]
-                    
+
                        DispatchQueue.main.async {
                                               self.tableviewTest.reloadData()
                                           }
                     print("json: ", resultList)
-                    
+
                    }catch(let err){
                         print("情報の取得に失敗しました。:", err)
 

@@ -57,7 +57,7 @@ class testTableViewCell: UITableViewCell {
                     print("Error : \(err.localizedDescription)")
                 }
             }
-        }
+    }
     
  
 //
